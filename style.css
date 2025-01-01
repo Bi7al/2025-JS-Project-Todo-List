@@ -31,31 +31,36 @@
     input:focus{
         outline: none;
     }
-    button{
+    .new-task button{
         border-radius: 0 40px 40px 0;
         border: none;
         background-color: chocolate;
         color: white;
     }
-    button:hover{
+    .new-task button:hover{
         cursor: pointer;
         font-size: small;
     }
     .task-list{
         background-color: rgb(119, 48, 9);
         width: 95vw;
+        color: white;
+        font-weight: 600;
         min-height: 60vh;
         margin-top: 5rem;
         border-radius: 1rem;
         padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
 }
 .task-item{
     display: flex;
-    color: white;
+    
     gap: .5rem;
-    background-color: brown;
+    background-color: rgba(255, 255, 255,0.1);
     padding: .25rem;
 }
 .completed{
