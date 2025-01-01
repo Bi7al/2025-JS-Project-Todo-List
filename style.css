@@ -51,6 +51,17 @@
     }
 
 }
+.task-item{
+    display: flex;
+    color: white;
+    gap: .5rem;
+    background-color: brown;
+    padding: .25rem;
+}
+.completed{
+    text-decoration: line-through;
+    
+}
 
 
 
