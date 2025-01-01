@@ -41,9 +41,12 @@ function renderTodos() {
             const newItem = document.createElement("div");
             newItem.className = "task-item"
             newItem.innerHTML = `
-        <input type="checkbox" onChange=completeTask(${index}) >
-        <p id="task-${index}">${task.text}</p>
-        <button onclick=deleteTask(${index})>Delete</button>`
+            <div class="task-title">
+            <input type="checkbox" onChange=completeTask(${index}) >
+            <button onclick=deleteTask(${index})><i class="fa-solid fa-trash"></i></button>
+            </div>
+            <p id="task-${index}">${task.text}</p>
+        `
             todoList.append(newItem);
         })
     }

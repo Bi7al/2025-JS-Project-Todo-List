@@ -4,6 +4,8 @@
     padding: none;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
+    font-weight: 600;
+
 }
 
 .wrapper{
@@ -15,9 +17,6 @@
     padding-top: 5rem;
     align-items: center;
     flex-shrink: 2;
-
-
-
     .new-task{
         display: flex;
         margin-top: 2rem;
@@ -45,7 +44,6 @@
         background-color: rgb(119, 48, 9);
         width: 95vw;
         color: white;
-        font-weight: 600;
         min-height: 60vh;
         margin-top: 5rem;
         border-radius: 1rem;
@@ -58,11 +56,30 @@
 }
 .task-item{
     display: flex;
-    
+    flex-direction: column;
     gap: .5rem;
+    width: 15rem;
     background-color: rgba(255, 255, 255,0.1);
-    padding: .25rem;
+    border-radius: 1rem;
+    padding: .5rem;
+
+    .task-title{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    button{
+        background: none;
+        border: none;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    p{
+        margin-left: .5rem;
+    }
 }
+
 .completed{
     text-decoration: line-through;
     
