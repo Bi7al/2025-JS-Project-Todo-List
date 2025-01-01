@@ -67,5 +67,6 @@ function completeTask(taskId) {
 function deleteTask(taskId) {
 
     myTodos = myTodos.filter((task) => task.id != taskId);
+    savetoStorage();
     renderTodos();
 }
