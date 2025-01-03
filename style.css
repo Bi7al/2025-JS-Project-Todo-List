@@ -84,7 +84,10 @@
     text-decoration: line-through;
     
 }
-
+.header{
+    display: flex;
+    gap: 2rem;
+}
 
 
 @media (max-width: 700px)  {
