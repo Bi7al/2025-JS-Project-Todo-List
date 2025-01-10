@@ -100,9 +100,11 @@ function main() {
         }
     }
     function deleteTask(taskId) {
-
-        myTodos = myTodos.filter((task) => task.id != taskId);
-        savetoStorage();
-        renderTodos();
+        let choice = alert("Do you really want to Delete This Task ?");
+        if (choice == "ok") {
+            myTodos = myTodos.filter((task) => task.id != taskId);
+            savetoStorage();
+            renderTodos();
+        }
     }
 }
